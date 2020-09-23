@@ -14,7 +14,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddLogging();
             services.AddOptions();
             services.Configure(optionsAction);
-            services.AddSingleton<IMqttClient, MqttClient>();
+            services.AddSingleton<MqttClient>();
             return services;
         }
     }
